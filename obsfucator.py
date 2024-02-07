@@ -53,7 +53,7 @@ def handle_variables(line):
     handle_left_side_variable(line)
     return handle_right_side_variables(line)
 
-def generate_random_line(line, n=0.7):
+def generate_random_line(line, n=0.7): 
     # n is the probability of adding a random line
     if(utils.random_int() <= n*10):
         # add a new line
