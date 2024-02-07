@@ -34,7 +34,7 @@ def handle_right_side_variables(line):
 
 # generate a comment
 def generate_comment_line():
-    return '#comment'
+    return f'#{utils.random_string(60)}'
 
 # generate assignment line
 def generate_assignment_line(selected_option):
@@ -42,8 +42,8 @@ def generate_assignment_line(selected_option):
         return f'{utils.random_string()} = "{utils.random_string(20)}"'
     if(selected_option == 'int'):
         return f'{utils.random_string()} = {utils.random_int(a=1, b=10000)}'
-    if(selected_option == 'comb'):
-        return f'{utils.random_string()} = {utils.random_choice(variables)} + {utils.random_choice(variables)}'
+    if(selected_option == 'comb' and len(variables) > 0):
+        return f'{utils.random_string()} = {variables_mapping[utils.random_choice(variables)]} + {variables_mapping[utils.random_choice(variables)]}'
     return generate_comment_line()
 
 
@@ -53,7 +53,7 @@ def handle_variables(line):
     handle_left_side_variable(line)
     return handle_right_side_variables(line)
 
-def generate_random_line(line, n=0.4):
+def generate_random_line(line, n=0.7):
     # n is the probability of adding a random line
     if(utils.random_int() <= n*10):
         # add a new line
