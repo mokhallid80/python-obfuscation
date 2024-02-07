@@ -1,5 +1,5 @@
-# python-obsfucation
-A very simple obsfucation tool for python code. Current version only works with python code that has no indentation.
+# python-obfuscation
+A very simple obfuscation tool for python code. Current version only works with python code that has no indentation.
 
 ## Example
 ### Input
