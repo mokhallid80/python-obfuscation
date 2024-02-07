@@ -81,4 +81,4 @@ with open(input_file_path, 'r') as f:
         output += f'{new_line}\n'
 
 # save the output in a file
-utils.save_file('obsfucated_output', output)
+utils.save_file('obfuscated_output', output)
