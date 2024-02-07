@@ -14,3 +14,10 @@ def extract_variable(line):
             return None
     except:
         return None
+    
+
+# save the output in a file
+def save_file(filename, output):
+    f = open(f'{filename}.py', 'w')
+    f.write(output)
+    f.close()
