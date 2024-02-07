@@ -1,8 +1,8 @@
-ssbfbi = 1
+gjtysh = 1
 
-odazko = 23
+jpczen = 23
 
-xpkhrl = ssbfbi + odazko
+xwdkeu = gjtysh + jpczen
 
-print("the xpkhrl is " + str(xpkhrl))
+print("the xwdkeu is " + str(xwdkeu))
 
